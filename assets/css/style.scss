@@ -4,7 +4,7 @@
 @import "jekyll-theme-minimal";
 
 header {
-    background-color: #4a4e6994;
+    background-color: transparent;
     position: fixed;
     top: 0;
     width: 100%;
@@ -12,6 +12,7 @@ header {
 }
 
 footer {
+    background: transparent;
     position: fixed;
     bottom: 0;
     width: 100%;
