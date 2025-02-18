@@ -1,5 +1,5 @@
 <header>
-_ Welcome to mikhayeeer's tech blog _
+<i>>Welcome to mikhayeeer's tech blog</i>
 </header>
 
 @[TOC]
