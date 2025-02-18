@@ -1,6 +1,7 @@
 title: "MikhayEeer's Blog"
 author: mikhayeeer
 description: "mikhayeeer's tech and study blog"
-remote_theme: pages-themes/minimal@v0.2.0
+theme: minimal-mistakes-jekyll
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
+minimal_mistakes_skin: "neon" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"

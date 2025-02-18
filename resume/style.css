@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #9a8c98, #c9ada7, #f2e9e4); /* 修改背景颜色 */
+    color: #333;
+    text-align: center;
+}
+/*header 设置*/
+header {
+    background-color: #4a4e6994; /* 修改背景颜色并添加透明度 */
+    color: #fff;
+    text-shadow: 0 0 8px rgba(45, 42, 42, 0.804);
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.0em;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+/*section部分*/
+section {
+    padding: 20px;
+    margin: 10px auto;
+    background-color: #f2e9e479;
+    color: #4a4e69;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+section h2 {
+    border-bottom: 1px solid #4a4e69;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 1.1em;
+}
+
+section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px; /*表格底部外边距*/
+}
+
+section table, section table td {
+    border: 0.5px solid transparent; /*透明的表格线*/
+}
+
+section table td {
+    padding: 4px;
+    text-align: left;
+    vertical-align: top;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+ul li {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li h3, ul li p {
+    margin: 0;
+    padding: 0 10px;
+}
+/*footer 页尾设置*/
+footer {
+    height: 30px; /* 调整高度 */
+    background-color: #4a4e6994; /* 修改背景颜色并添加透明度 */
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+    width: 100%;
+    bottom: 0;
+}
