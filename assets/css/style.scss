@@ -4,20 +4,22 @@
 @import "jekyll-theme-minimal";
 
 header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
+    background-color: #4a4e6994;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  z-index: 1000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 html {
-  background: linear-gradient(to right, #9a8c98, #c9ada7, #f2e9e4);
+    background: linear-gradient(to right, #9a8c98, #c9ada7, #f2e9e4);
 }
 
