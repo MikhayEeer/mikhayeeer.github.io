@@ -11,6 +11,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
     {% include head-custom.html %}
+    <style>
+      img {
+        width: 1em;
+        height: 1em;
+        vertical-align: middle;
+      }
+    </style>
   </head>
   <body>
     <div class="wrapper">
@@ -18,7 +25,7 @@
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
 
         {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" sizes="24x24"/>
+          <img src="{{site.logo | relative_url}}" alt="Logo"/>
         {% endif %}
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
@@ -29,12 +36,12 @@
 
         {% if site.github.is_user_page %}
         <p class="view">
-          <img src="../assets/img/github.png" sizes="16x16"/>
+          <img src="../assets/img/github.png"/>
           <a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
         {% endif %}
 
         <p class="view">
-          <img src="../assets/img/resume.png" sizes="16x16"/>
+          <img src="../assets/img/resume.png"/>
           <a href="../resume/index.html">View My Web Resume</a></p>
 
         {% if site.show_downloads %}
