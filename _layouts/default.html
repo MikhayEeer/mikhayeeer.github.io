@@ -22,7 +22,7 @@
             {{ site.title | default: site.github.repository_name }}
           </a>
         </h1>
-        <img src="assets/img/avatar.jpg" alt="avatar" />
+        <img src="/assets/img/avatar.jpg" alt="avatar" />
         <p>{{ site.description | default: site.github.project_tagline }}
           <br>Share some notes during my study and work.
           <small>
@@ -36,7 +36,7 @@
 
         {% if site.email %}
         <p class="view">
-          <img src="assets/img/email.png"/>
+          <img src="/assets/img/email.png"/>
           <a href="mailto:{{ site.email }}">{{ site.email }}
             <small>Email</small>
           </a>
@@ -51,7 +51,7 @@
 
         {% if site.github.is_user_page %}
         <p class="view">
-          <img src="assets/img/github.png"/>
+          <img src="/assets/img/github.png"/>
           <a href="{{ site.github.owner_url }}">View My GitHub Profile
             <small>{{ site.github.owner_name }}</small>
           </a>
