@@ -3,6 +3,29 @@
 </header>
 
 # 文章列表
+
+## 按标签分类
+{% for tag in site.tags %}
+### {{ tag[0] }}
+<ul>
+  {% for post in tag[1] %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%Y-%m-%d" }}
+    </li>
+  {% endfor %}
+</ul>
+{% endfor %}
+
+## 按发布日期分类
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%Y-%m-%d" }}
+    </li>
+  {% endfor %}
+</ul>
+
+## 全部博客标题
 <ul>
   {% for post in site.posts %}
     <li>

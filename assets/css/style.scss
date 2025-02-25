@@ -27,3 +27,13 @@ html {
     background: linear-gradient(to right, #9a8c98, #c9ada7, #f2e9e4);
 }
 
+a {
+    color: #4a3c23; // 设置链接颜色为与背景色相近的颜色
+    text-decoration: none; // 去掉下划线
+}
+
+a:hover {
+    color: #cbab72; // 设置链接悬停时的颜色
+    text-decoration: underline; // 悬停时显示下划线
+}
+
