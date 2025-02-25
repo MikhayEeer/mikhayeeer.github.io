@@ -3,21 +3,21 @@
 
 @import "jekyll-theme-minimal";
 
+/* 回退选项 */
+html {
+    background: linear-gradient(to right, #b3d8a8c6, #A3D1C6); /* 使用 JPEG 作为回退 */
+}
+
 /* 如果浏览器支持 WebP */
 @supports (background-image: url("data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA")) {
     html {
-        background-image: url('../bg/wallhaven-6k81m7.webp');
+        background-image: url('../bg/wallhaven-z8wl1y.webp');
         background-size: cover;
         background-position: center;
-        opacity: 0.6; /* 添加透明度 */
     }
 }
 
-/* 回退选项 */
-html {
-    background: linear-gradient(to right, #B3D8A8, #A3D1C6); /* 使用 JPEG 作为回退 */
-    opacity: 0.8; /* 添加透明度 */
-}
+
 /*
 html {
     background: linear-gradient(to right, #B3D8A8, #cfd07e, #A3D1C6);
