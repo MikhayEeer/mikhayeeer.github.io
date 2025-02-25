@@ -5,17 +5,17 @@
 
 /* 如果浏览器支持 WebP */
 @supports (background-image: url("data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA")) {
-    .bg-image {
+    html {
         background-image: url('../bg/wallhaven-6k81m7.webp');
         background-size: cover;
         background-position: center;
-        opacity: 0.8; /* 添加透明度 */
+        opacity: 0.6; /* 添加透明度 */
     }
 }
 
 /* 回退选项 */
-.bg-image {
-    background: linear-gradient(to right, #B3D8A8, #cfd07e, #A3D1C6); /* 使用 JPEG 作为回退 */
+html {
+    background: linear-gradient(to right, #B3D8A8, #A3D1C6); /* 使用 JPEG 作为回退 */
     opacity: 0.8; /* 添加透明度 */
 }
 /*
