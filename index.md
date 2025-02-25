@@ -7,6 +7,7 @@ layout: default
 ## 友情链接
 
 CSDN: [blog.csdn\Topsort](https://blog.csdn.net/Topsort)
+博客园: [cnblogs](https://www.cnblogs.com/Danzel-Aria233)
 
 # Blogs
 
@@ -23,7 +24,7 @@ CSDN: [blog.csdn\Topsort](https://blog.csdn.net/Topsort)
 </ul>
 {% endfor %}
 
-## 按发布日期分类
+## 日期分布
 <ul>
   {% for post in site.posts %}
     <li>
@@ -32,20 +33,10 @@ CSDN: [blog.csdn\Topsort](https://blog.csdn.net/Topsort)
   {% endfor %}
 </ul>
 
-## 全部博客标题
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
-
-
 # 推荐阅读
 > 一些个人很喜欢的参考资料以供查看
 
 
 ```
-That's All, Thanks for Your Invitation.
+That's All, Thanks for Your Visit.
 ```
