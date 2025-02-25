@@ -2,7 +2,9 @@
 <i>>Welcome to mikhayeeer's tech blog</i>
 </header>
 
-@[TOC]
+测试index
+
+
 # 0. 简单认识Git
 ## 0.1 起源
   最初是由linux开发者linus用两周时间用c语言编写而成。github就是使用git系统对网站进行管理，github只支持git分布式系统，故名为github。
@@ -521,7 +523,6 @@ echo "Pre-commit Checking Passed!"
 
 exit 0
 ```
-
 <footer>
 
 </footer>
