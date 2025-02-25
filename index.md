@@ -1,16 +1,17 @@
-<header>
-<i>>Welcome to mikhayeeer's tech blog</i>
-</header>
+---
+layout: default
+---
 
-# 文章列表
+# Article List
 
-## 按标签分类
+## Tags
 {% for tag in site.tags %}
 ### {{ tag[0] }}
 <ul>
   {% for post in tag[1] %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%Y-%m-%d" }}
+      <a href="{{ post.url }}">{{ post.title }}</a>
+       - {{ post.date | date: "%Y-%m-%d" }}
     </li>
   {% endfor %}
 </ul>
@@ -43,6 +44,6 @@
 
 CSDN: [blog.csdn\Topsort](https://blog.csdn.net/Topsort)
 
-<footer>
-
-</footer>
+```
+That's All, Thanks for Your Invitation.
+```
