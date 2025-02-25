@@ -12,12 +12,17 @@
     <![endif]-->
     {% include head-custom.html %}
     <style>
-      img {
+      p img {
         width: 1em;
         height: 1em;
         vertical-align: middle;
       }
       h1 img {
+        width: 2em;
+        height: 2em;
+        vertical-align: middle;
+      }
+      img {
         width: 3em;
         height: 3em;
         vertical-align: middle;
@@ -34,8 +39,23 @@
           {% if site.logo %}
           <img src="{{site.logo | relative_url}}" alt="Logo"/><br>
           {% endif %}
-          <a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+          <a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a>
+        </h1>
+        <img src="../assets/img/avatar.jpg" alt="avatar" />
         <p>{{ site.description | default: site.github.project_tagline }}</p>
+        <p><small>
+          UCAS在读研究生<br>
+          技术栈:<br>C/C++/Python/Golang/Linux/Git<br>
+          对新技术和新事物充满研究激情，欢迎一起交流探讨！<br>
+          博客有任何问题或建议，欢迎联系我！<br>
+        </small></p>
+
+        {% if site.email %}
+        <p class="view">
+          <img src="../assets/img/email.png"/>
+          <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        </p>
+        {% endif %}
 
         {% if site.github.is_project_page %}
         <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
@@ -44,7 +64,10 @@
         {% if site.github.is_user_page %}
         <p class="view">
           <img src="../assets/img/github.png"/>
-          <a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
+          <a href="{{ site.github.owner_url }}">View My GitHub Profile
+            <small>{{ site.github.owner_name }}</small>
+          </a>
+        </p>
         {% endif %}
 
         <p class="view">
