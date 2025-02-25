@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Article List
+# Blogs
 
 ## Tags
 {% for tag in site.tags %}
