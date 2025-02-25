@@ -521,7 +521,5 @@ echo "Pre-commit Checking Passed!"
 
 exit 0
 ```
-
 <footer>
-
 </footer>
