@@ -4,11 +4,15 @@
   <<< Author notes: Finish >>>
   Review what we learned, ask for feedback, provide next steps.
 -->
+# Remain
 
-# 恭喜，您已开启了GitHub Pages！🎉
+`1 em = 16 px`
+
 minimal主题 ： https://github.com/pages-themes/minimal/tree/master
 
 github-pages用法： https://www.github-zh.com/getting-started/github-pages
+
+# 恭喜，您已开启了GitHub Pages！🎉
 
 我们将在我为您创建的一个分支my-pages中工作，以使该网站看起来很棒。 ❇️
 
