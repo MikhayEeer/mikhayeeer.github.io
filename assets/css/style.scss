@@ -12,7 +12,7 @@ html {
 @supports (background-image: url("data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA")) {
     html {
         background-image: url('/assets/bg/wallhaven-z8wl1y.webp');
-        background-size: cover;
+        background-size: auto;
         background-position: center;
     }
 }
