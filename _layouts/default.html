@@ -13,18 +13,18 @@
     {% include head-custom.html %}
     <style>
       p img {
-        width: 1em;
+        width: 1em; 
         height: 1em;
         vertical-align: middle;
       }
       h1 img {
-        width: 2em;
-        height: 2em;
+        width: 25px;
+        height: 25px;
         vertical-align: middle;
       }
       img {
-        width: 3em;
-        height: 3em;
+        width: 100px;
+        height: 100px;
         vertical-align: middle;
       }
     </style>
@@ -42,13 +42,14 @@
           <a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a>
         </h1>
         <img src="../assets/img/avatar.jpg" alt="avatar" />
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
-        <p><small>
-          UCAS在读研究生<br>
-          技术栈:<br>C/C++/Python/Golang/Linux/Git<br>
-          对新技术和新事物充满研究激情，欢迎一起交流探讨！<br>
-          博客有任何问题或建议，欢迎联系我！<br>
-        </small></p>
+        <p>{{ site.description | default: site.github.project_tagline }}
+          <small>
+            UCAS在读研究生<br>
+            技术栈:<br>&nbsp;C/C++/Python/Golang/Linux/Git<br>
+            对新技术和新事物充满研究激情，欢迎一起交流探讨！<br>
+            博客有任何问题或建议，欢迎联系我！<br>
+          </small>
+        </p>
 
         {% if site.email %}
         <p class="view">
