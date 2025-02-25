@@ -1,7 +1,6 @@
 title: "MikhayEeer Home"
 author: mikhayeeer
 description: "MikhayEeer's note station"
-logo: "/assets/img/blog.png"
 email: "Mikhay.Eeer@outlook.com"
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:

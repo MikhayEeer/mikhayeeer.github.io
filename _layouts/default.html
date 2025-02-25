@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: "zh-CN" }}">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,11 +34,7 @@
     <div class="wrapper">
       <header>
         <br>
-        <br>
         <h1>
-          {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo"/><br>
-          {% endif %}
           <a href="{{ "/" | absolute_url }}">
             {{ site.title | default: site.github.repository_name }}
           </a>
@@ -103,6 +99,6 @@
         <p><small>@2025 - MikhayEeer</small></p>
       </footer>
     </div>
-    <script src="{{ '../assets/js/scale.fix.js' | relative_url }}"></script>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
   </body>
 </html>
