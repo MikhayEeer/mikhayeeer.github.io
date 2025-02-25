@@ -17,31 +17,24 @@ html {
     }
 }
 
-
 /*
 html {
     background: linear-gradient(to right, #B3D8A8, #cfd07e, #A3D1C6);
 }
 */
 
-header {
-    background-color: transparent;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-body {
+header, body, footer {
     background: transparent;
 }
 
-footer {
-    background: transparent;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 1000;
+img {
+    width: 120px;
+    height: 120px;
+}
+
+p img {
+    width: 1em; 
+    height: 1em;
 }
 
 a {
