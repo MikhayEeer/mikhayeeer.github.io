@@ -11,7 +11,7 @@ html {
 /* 如果浏览器支持 WebP */
 @supports (background-image: url("data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA")) {
     html {
-        background-image: url('assets/bg/wallhaven-z8wl1y.webp');
+        background-image: url('/assets/bg/wallhaven-z8wl1y.webp');
         background-size: cover;
         background-position: center;
     }
@@ -48,7 +48,7 @@ a:hover {
 }
 
 .highlight {
-    background: rgba(249, 157, 19, 0.388);
+    opacity: 0.6;
     border-radius: 5px;
     padding: 1em;
 }
