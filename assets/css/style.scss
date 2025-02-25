@@ -24,8 +24,17 @@ html {
 }
 */
 
-wrapper {
-    width: 30%;
+.wrapper {
+    width: 35%;
+    float: left; /* 确保左边内容浮动 */
+}
+
+section {
+    width: 65%;
+    float: right; /* 确保右边内容浮动 */
+    height: 100vh; /* 使右边内容占满整个视口高度 */
+    overflow: auto; /* 如果内容超出视口高度，添加滚动条 */
+    position: relative; /* 确保右边内容不会被左边挡住 */
 }
 
 header {
