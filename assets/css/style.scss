@@ -3,6 +3,27 @@
 
 @import "jekyll-theme-minimal";
 
+/* 如果浏览器支持 WebP */
+@supports (background-image: url("data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA")) {
+    .bg-image {
+        background-image: url('../bg/wallhaven-6k81m7.webp');
+        background-size: cover;
+        background-position: center;
+        opacity: 0.8; /* 添加透明度 */
+    }
+}
+
+/* 回退选项 */
+.bg-image {
+    background: linear-gradient(to right, #B3D8A8, #cfd07e, #A3D1C6); /* 使用 JPEG 作为回退 */
+    opacity: 0.8; /* 添加透明度 */
+}
+/*
+html {
+    background: linear-gradient(to right, #B3D8A8, #cfd07e, #A3D1C6);
+}
+*/
+
 header {
     background-color: transparent;
     position: fixed;
@@ -21,10 +42,6 @@ footer {
     bottom: 0;
     width: 100%;
     z-index: 1000;
-}
-
-html {
-    background: linear-gradient(to right, #B3D8A8, #cfd07e, #A3D1C6);
 }
 
 a {
