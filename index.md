@@ -2,6 +2,12 @@
 layout: default
 ---
 
+# 欢迎来到我的博客
+
+## 友情链接
+
+CSDN: [blog.csdn\Topsort](https://blog.csdn.net/Topsort)
+
 # Blogs
 
 ## Tags
@@ -35,14 +41,10 @@ layout: default
   {% endfor %}
 </ul>
 
-# 欢迎来到我的博客
 
 # 推荐阅读
 > 一些个人很喜欢的参考资料以供查看
 
-# 友情链接
-
-CSDN: [blog.csdn\Topsort](https://blog.csdn.net/Topsort)
 
 ```
 That's All, Thanks for Your Invitation.
