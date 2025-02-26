@@ -6,6 +6,7 @@ tags:
   - Note
 categories:
   - Tools
+description: Git基本原理和高频操作，包括本地和远程的操作，一些commit和branch的基础操作
 ---
 
 @[TOC]

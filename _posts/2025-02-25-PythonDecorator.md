@@ -6,6 +6,7 @@ tags:
   - 面向对象
 categories:
   - Python
+description: 装饰器@也许算是Python开发的一个转折点，学了这个才发现Python确实很有意思，在装饰器之前Python是一门简单语言，之后就是一门多变灵活的简洁语言了.
 ---
 
 #装饰器
