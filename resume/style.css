@@ -46,8 +46,8 @@ section {
     margin: 10px auto;
     background-color: #f2e9e479;
     color: #262835;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     max-width: 800px;
     text-align: left;
     font-size: 0.9em;
@@ -64,11 +64,13 @@ section h2 {
 section table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 10px; /*表格底部外边距*/
+    margin-bottom: 4px; /*表格底部外边距*/
 }
 
 section table, section table td {
-    border: 0.5px solid transparent; /*透明的表格线*/
+    /*border: 0.5px solid transparent; 透明的表格线*/
+    border: 2px #262835; 
+    padding: 4px;
 }
 
 section table td {
@@ -77,17 +79,40 @@ section table td {
     vertical-align: top;
 }
 
+section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+section ul li h3 {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+section ul li p {
+    margin: 5px 0;
+    padding-left: 20px;
+    text-indent: -20px;
+}
+
+section ul li ul {
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+section ul li ul li {
+    margin-bottom: 5px;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
     text-align: left;
-}
-
-ul li {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 ul li h3, ul li p {
