@@ -43,6 +43,7 @@ print(add(2, 3))  # 1
 ```
 
 ## 为什么需要装饰器
+
 考虑现有多个写好的函数，现在想进行一个函数运行时间的统计
 - 最原始方案：
 	挨着在每个函数的头尾添加time并计算
@@ -50,6 +51,7 @@ print(add(2, 3))  # 1
 原始方案有大面积重复工作，且需要修改封装好的内容；
 
 - 将**函数作为参数**传参到新的函数
+
 ```python
 import time
 def calculate_time(func_name):
@@ -71,7 +73,9 @@ calculate_time(funcA())
 而装饰器，就通过特有的语法，不需要修改现有代码（封装好的函数，和调用位置）
 
 ## 语法糖 @
+
 使用装饰器`@`，**默认传入参数是被装饰的函数**
+
 ```python
 import time
 def calculate_time(func):
@@ -91,6 +95,7 @@ def funcB():
 
 funcA()
 ```
+
 当然目前的装饰器函数没有接收传参，实际上大部分时候，需要被装饰的函数，很可能都是有参数的
 
 ```python
@@ -111,6 +116,7 @@ funcC("test")
 # 使用
 
 ## 类装饰器
+
 ```python
 class ClassDecorator1:
 	def __init__(self, func):
@@ -145,6 +151,7 @@ def funcB():
 
 ## 多个装饰器
 有里到外执行
+
 ```python
 @decorator1
 @decorator2
@@ -152,6 +159,7 @@ def funcB():
 def func():
 	pass
 ```
+
 最先执行的`@decorator3`
 
 # 内置装饰器
@@ -176,6 +184,7 @@ def func():
 
 ## @classmethod
 定义类方法，方法第一个参数是类本身
+
 ```python
 class DateUtils:
     @classmethod
@@ -201,6 +210,7 @@ print(date.year)  # 输出 2023
 
 ## @staticmethod
 定义静态方法，不依赖实例和类，类似普通函数，但是**逻辑上属于类**
+
 ```python
 class MathUtils:
     @staticmethod
@@ -225,6 +235,7 @@ python3.9新增的装饰器
 
 在一次运行过程中，缓存@cache所装饰函数的结果
 例如计算了`f(13)`，然后在一百次递归后再次用到了`f(13)`，这次就不再计算直接从缓存中读取值
+
 ```python
 from functools import cache
 
