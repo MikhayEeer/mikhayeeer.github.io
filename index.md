@@ -7,15 +7,16 @@ layout: default
 ## 友情链接
 
 CSDN: [blog.csdn\Topsort](https://blog.csdn.net/Topsort)
+
 博客园: [cnblogs](https://www.cnblogs.com/Danzel-Aria233)
 
 # Blogs
 
-## Tags
-{% for tag in site.tags %}
-### {{ tag[0] }}
+## Category
+{% for category in site.categories %}
+### {{ category[0] }}
 <ul>
-  {% for post in tag[1] %}
+  {% for post in category[1] %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
        - {{ post.date | date: "%Y-%m-%d" }}
