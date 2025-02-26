@@ -20,6 +20,7 @@ CSDN: [blog.csdn\Topsort](https://blog.csdn.net/Topsort)
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
        - {{ post.date | date: "%Y-%m-%d" }}
+      <br><small> {{post.description}} </small>
     </li>
   {% endfor %}
 </ul>

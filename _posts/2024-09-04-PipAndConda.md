@@ -5,6 +5,7 @@ tags:
   - Python
 categories:
   - Python
+description: pip和conda的基本操作，也包含了换源、导出环境和打包虚拟环境等常用操作的说明
 ---
 
 @[TOC]
