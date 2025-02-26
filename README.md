@@ -12,6 +12,9 @@ minimal主题 ： https://github.com/pages-themes/minimal/tree/master
 
 github-pages用法： https://www.github-zh.com/getting-started/github-pages
 
+优质的minimal模板: https://github.com/mmistakes/minimal-mistakes/tree/master
+> 后续可以参考该博客，进一步修改
+
 # 恭喜，您已开启了GitHub Pages！🎉
 
 我们将在我为您创建的一个分支my-pages中工作，以使该网站看起来很棒。 ❇️
