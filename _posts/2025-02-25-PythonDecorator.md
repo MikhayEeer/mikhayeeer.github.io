@@ -4,6 +4,8 @@ date: 2025-02-25
 tags:
   - Python
   - 面向对象
+categories:
+  - Python
 ---
 
 #装饰器

@@ -3,6 +3,8 @@ title: Python包管理-Pip与Conda的用法
 date: 2024-09-04
 tags:
   - Python
+categories:
+  - Python
 ---
 
 @[TOC]

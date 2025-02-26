@@ -4,6 +4,8 @@ date: 2024-08-20
 tags:
   - Git
   - Note
+categories:
+  - Tools
 ---
 
 @[TOC]
