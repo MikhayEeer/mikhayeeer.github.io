@@ -9,9 +9,6 @@ description: 解析器工具tree-sitter的介绍使用，目前的博客大部�
 ---
 [文章CSDN链接-Treesitter0.24使用](https://blog.csdn.net/Topsort/article/details/145829089?fromshare=blogdetail&sharetype=blogdetail&sharerId=145829089&sharerefer=PC&sharesource=Topsort&sharefrom=from_link)
 
-- tree-sitter AST 类型定义
-- C语义
-- LLVM IR 
 # 0. 介绍
 tree-sitter是 解析器 生成器 工具
 为源文件构建具体的**语法树**
