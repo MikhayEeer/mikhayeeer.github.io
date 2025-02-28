@@ -8,7 +8,7 @@ categories: Compilers
 description: LLVM的源码在Ubuntu系统的编译和一些踩坑记录，内存和核心很重要，WSL不一定够用；耗时很长；
 ---
 
-@[TOC]
+[文章CSDN链接-LLVM源码编译](https://blog.csdn.net/Topsort/article/details/145928049?fromshare=blogdetail&sharetype=blogdetail&sharerId=145928049&sharerefer=PC&sharesource=Topsort&sharefrom=from_link)
 
 # 源码编译
 
