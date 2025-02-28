@@ -4,7 +4,7 @@ date: 2025-02-15
 tags:
   - Python
   - Cpp
-categories: compilers
+categories: Compilers
 description: 解析器工具tree-sitter的介绍使用，目前的博客大部分不契合最新版本，函数接口有更新和删改；同时分析了tree-sitter生成的AST的基本结构
 ---
 [文章CSDN链接-Treesitter0.24使用](https://blog.csdn.net/Topsort/article/details/145829089?fromshare=blogdetail&sharetype=blogdetail&sharerId=145829089&sharerefer=PC&sharesource=Topsort&sharefrom=from_link)
