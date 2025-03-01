@@ -8,6 +8,9 @@ tags:
 categories: Tools
 description: Protocol Buffers（简称protobuf）是谷歌提供的一种新的序列化方法，比json和xml更快更小；以二进制的传输，并且利用编译器protoc进行编译，使得proto文件和二进制序列一起兼具了可读性和速度；
 ---
+
+CSDN文章链接：https://blog.csdn.net/Topsort/article/details/145955168?fromshare=blogdetail&sharetype=blogdetail&sharerId=145955168&sharerefer=PC&sharesource=Topsort&sharefrom=from_link
+
 # 基础
 
 ## 0.1 序列化
@@ -15,6 +18,7 @@ description: Protocol Buffers（简称protobuf）是谷歌提供的一种新的�
 	对象转换为字节序列（字符串）的过程
 - 反序列化
 	字节序列 恢复为 对象的过程
+
 ```cpp
 struct User {
 	string name;
@@ -48,6 +52,7 @@ proto 可以定义数据的结构、会自动生成源代码；更新数据结�
 
 # Proto结构
 ## 1.1 语法
+
 ```protobuf
 syntax = "proto3"; // 指定 proto3 语法
 
@@ -64,10 +69,12 @@ message Person {
 `<规则> <类型> <名> = <编号>;`
 ## 1.2 类型 与 规则
 - 字段类型
+
 ```protobuf
 int32 string bool bytes enum message
 ```
 - 字段规则
+
 ```protobuf
 optional // 可选
 repeated // 重复  数组
@@ -77,6 +84,7 @@ oneof   // 多选一 [[Protobuf#1.4 oneof 多态]]
 唯一编号； `1~15`只占用1字节
 ## 1.3 嵌套
 实现复杂结构
+
 ```protobuf
 message Base {
 	string base_field = 1;
@@ -90,6 +98,7 @@ message Derived {
 ## 1.4 oneof 多态
 可以**包含多个**类型字段，但是**同时只能有一个**被设置
 多选一需求，不同字段之间是**互斥的**
+
 
 ```protobuf
 message Event {
@@ -108,6 +117,7 @@ message PersonInfo {
 }
 ```
 然后在代码中的具体设置
+
 ```cpp
 PersonInfo person;
 person.set_qq("12987");
@@ -118,6 +128,7 @@ person.set_wx("wx_23816"); // 这个时候会 覆盖 qq字段
 # 编译与使用
 ## 2.1 编译器 protoc
 编写好`.proto`文件后，利用`protoc`编译器生成目标语言代码；
+
 ```bash
 protoc --cpp_out=. person.proto
 
@@ -136,6 +147,7 @@ protoc --go_out=. person.proto
 
 进行序列化
 
+
 ```cpp
 #include "person.pb.h"
 
@@ -150,6 +162,7 @@ std::string serialized = person.SerializeToString();
 ```
 
 反序列化
+
 ```cpp
 Person parsed_person;
 parsed_person.ParseFromString( serialized );
@@ -161,25 +174,30 @@ parsed_person.ParseFromString( serialized );
 `add_`, `_size`
 ### 值操作
 - 设置
+
 ```cpp
 person.set_name('Jack');
 ```
 - 获取
+
 ```cpp
 std::string person_name = person.name();
 ```
 - **存在性检查**
+
 ```cpp
 if ( person.has_email() ) {
 	// ...
 }
 ```
 - 清除
+
 ```cpp
 person.clear_name();
 ```
 ### 可变指针 mutable
 `.proto`文件内容
+
 ```protobuf
 message Address {
 	string city = 1;
@@ -190,6 +208,7 @@ message Person{
 }
 ```
 具体使用(C++为例)
+
 ```cpp
 Address* addr = person.mutable_address();
 
@@ -197,6 +216,7 @@ addr->set_city("Beijing");
 ```
 ### Repeated 字段操作
 字段定义`.proto`
+
 ```protobuf
 message Exam {
 	// ...
@@ -204,6 +224,7 @@ message Exam {
 }
 ```
 repeated的操作(C++为例)
+
 ```cpp
 // 添加
 exam.add_scores(90);
@@ -220,6 +241,7 @@ exam.mutable_scores(0)->push_back(95);
 int size = exam.scores_size();
 ```
 ### 交换与合并
+
 ```cpp
 // 交换 swap
 Person p1, p2;
@@ -245,6 +267,7 @@ p1.MergeFrom(p2);
 ## 三个代码例子
 
 ### proto
+
 ```protobuf
 message Order {
   int64 order_id = 1;
@@ -266,6 +289,7 @@ message Order {
 }
 ```
 ### json
+
 ```json
 "order" : {
 	"order_id" : 1,
@@ -278,6 +302,7 @@ message Order {
 }
 ```
 ### xml
+
 ```xml
 <Order>
   <OrderID>1001</OrderID>
@@ -312,6 +337,7 @@ gRPC通信： 基于HTTP/2 和 protobuf 的高性能 RPC 框架
 ## 前后端
 
 前端（如浏览器），使用JavaScript，就将proto转为js
+
 ```bash
 npm install -g protobufjs
 pbjs -t static-module -w commonjs -o data_pb.js data.proto
