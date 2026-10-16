@@ -3,132 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MikhayEeer Resume</title>
+    <title>MikhayEeer - Resume | MikhayEeer</title>
     <link rel="stylesheet" href="style.css">
     <style>
-      img {
-        width: 1em;
-        height: 1em;
-        vertical-align: middle;
-      }
+      img { width: 1em; height: 1em; vertical-align: middle; }
+      section ul li { list-style-type: disc; margin-left: 20px; }
     </style>
 </head>
 <body>
     <header>
         <h1>MikhayEeer</h1>
-        <p>Email: mikhay.eeer@outlook.com</p>
-        <p>Tel: 195-2001-6871&nbsp;&nbsp;|&nbsp;&nbsp;Address: Beijing, China</p>
+        <p>Email: <a href="mailto:mikhay@163.com" style="color:#fff">mikhay@163.com</a>&nbsp;&nbsp;|&nbsp;&nbsp;GitHub: <a href="https://github.com/MikhayEeer" style="color:#fff">github.com/MikhayEeer</a></p>
     </header>
     <section>
-        <h2>Information</h2>
+        <h2>教育背景</h2>
         <table>
             <tr>
-                <td>中国科学院大学<br>University of Chinese Academy of Sciences</td>
-                <td>人工智能<br>Artificial Intelligence</td>
-                <td>2023-2026</td>
+                <td><b>中国科学院大学</b> - 人工智能 硕士<br>杭州高等研究院 / 软件研究所 - 基础软件与系统重点实验室（原计算机科学国家重点实验室）</td>
+                <td>2023.09 - 2026.07</td>
             </tr>
             <tr>
-                <td>东北大学<br>Northeastern University</td>
-                <td>数据科学与大数据<br>Data Science and Big Data Technology</td>
-                <td>2019-2023</td>
+                <td><b>东北大学（985）</b> - 数据科学与大数据技术 本科<br>综合测评 2/69，推免至中国科学院大学</td>
+                <td>2019.09 - 2023.07</td>
             </tr>
         </table>
     </section>
     <section>
-        <h2>Experience</h2>
-        <!-- <table>
-            <tr>
-                <td><b>轻舟智航&nbsp;QCraft</b>
-                    <br><i>C++/SQL/Golang</ii></td>
-                <td>仿真研发</td>
-                <td>2024.11-2025.01</td>
-            </tr>
-        </table>
+        <h2>实习经历</h2>
         <table>
-            <tr>
-                <td>
-                    <li>Occupancy Network数据引擎</li>
-                    <p>&nbsp;实现LiDAR点云体素化算法，采用set+tuple哈希去重策略，去重后渲染帧率从6fps升至30fps</p>
-                    <p>&nbsp;显式存储体素间隔参数和数据采集场景；
-                    <br>&nbsp;记录自车坐标，维护坐标动态补偿模块，解决点云采集位移问题（阈值检测+姿态修正）</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <li>交互式停车位可视化系统</li>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <li>感知算法评测与质量保障</li>
-                </td>
-            </tr>
+            <tr><td><b>阿里云</b> - 数据库基础研发</td><td>2025.05 - 至今</td></tr>
         </table>
         <ul>
-            <li>
-                <ul>
-                    <li>交互式停车位可视化系统</li>
-                    <ul>
-                        <li>需求分析：解析proto协议数据格式，提取多类型停车位坐标属性</li>
-                        <li>核心实现：</li>
-                        <p>&nbsp;&nbsp;基于Canvas基类实现矩形渲染，支持动态坐标映射与层级绘制</p>
-                        <p>&nbsp;&nbsp;设计鼠标事件驱动的筛选逻辑，实现坐标范围过滤算法（捕获后端draw调用指令）</p>
-                    </ul>
-                    <li>感知算法评测与质量保障</li>
-                    <ul>
-                        <li>评测体系构建：
-                            <ul>
-                                <li>通过SQL聚合评测指标，建立IOU/PA分析看板，并根据看板分析出重大评测逻辑漏洞（fp,fn错位）</li>
-                                <li>提出边际权重评估模型，修正fn误报问题（IOU从0.3提升到0.5）</li>
-                            </ul>
-                        </li>
-                        <li>CI/CD改造：
-                            <ul>
-                                <li>问题隐患：现有CI仅能保证单测成功运行，不能预防switch穿透特性等带来的逻辑错误</li>
-                                <li>解决方案：利用AST解析器，基于pytest/gotest-cover实现分支覆盖率检测</li>
-                            </ul>
-                        </li>
-                        <li>代码治理：
-                            <ul>
-                                <li>重构常量声明体系，消除代码存在的字面量硬编码</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </ul>
-            </li>
-        </ul> -->
-    </section>
-    <section>
-        <h2>Projects</h2>
+            <li><b>向量索引支持：</b>调研主流向量索引方案，在自研数据库中设计<b>数据库原生的向量与标量混合检索一体化框架</b>；在现有 HNSW 基础上扩展支持 NNDescent 等离线构建算法，并在适配层为向量检索提供事务可见性与实时性语义；引入定时重建与分区调度策略，扩展产品适用场景，平衡吞吐、召回效果与成本，为 RAG 等大模型检索场景提供底层支撑。</li>
+            <li><b>实习生 AI 黑客松：</b>参加阿里云 &amp; 通义主办的 MCP / AI 大赛，基于百炼平台编排内容安全审核工作流；通过意图泛化 RAG 精准解析审核需求，结合关键帧抽取等策略实现多模态交叉审核；从 58 支队伍中<b>晋级八强</b>。</li>
+        </ul>
         <table>
-            <tr>
-                <td>医疗软件三维重建</td>
-                <td>华医人工智能科技</td>
-                <td>2022.11-2024.10</td>
-            </tr>
+            <tr><td><b>轻舟智航 QCraft</b> - 自动驾驶仿真研发</td><td>2024.11 - 2025.01</td></tr>
         </table>
-        <table>
-            <tr>
-                <td>
-                    <li>C/C++: 参与开源软件二次开发[仓库地址]</li>
-                    <li>Python: 参与软件的模型训练[仓库地址]</li>
-                    <li>参与软件的申报，并落地实践</li>
-                </td>
-            </tr>
-        </table>
-    </section>
-    <section>
-        <h2>Skills</h2>
         <ul>
-            <li>C++</li>
-            <li>技能2</li>
-            <li>技能3</li>
+            <li><b>渲染性能优化：</b>将点云数据转换为体素并设计新的体素 Proto 结构，解决渲染卡顿问题，帧率从 6fps 提升至 30fps；为停车场景数据新增交互式筛选，支持鼠标点击隐藏无关元素，避免冗余数据拖慢渲染。</li>
+            <li><b>评测缺陷修复：</b>使用 SQL 搭建指标分析看板，定位评测逻辑错误；设计边际权重模型，IOU 从 0.3 提升至 0.5；基于 AST 实现分支覆盖率检测，修复单测覆盖不全带来的隐患；重构常量池，消除字面量硬编码。</li>
+        </ul>
+    </section>
+    <section>
+        <h2>项目经历</h2>
+        <table>
+            <tr><td><b>医学重建软件开发与 AI 模型应用</b> - 梵晨博生医药集团</td></tr>
+        </table>
+        <ul>
+            <li><b>三维重建开发：</b>基于开源软件二次开发，负责源码构建、UI 重构及隐私策略模块；软件已取得国家医疗器械证书并投入市场使用。链接：MedAI</li>
+            <li><b>AI 研发：</b>训练并部署 CT 图像分割模型；基于 Redis + Flask 实现异步任务处理，改善客户端使用体验；融合多模态方法改进大模型并集成到软件中，论文（学生二作）被 PRCV 接收。</li>
+        </ul>
+        <table>
+            <tr><td><b>程序终止性分析研究</b> - 工业人工智能研究院</td></tr>
+        </table>
+        <ul>
+            <li>在基于支持向量机的已有工作上，结合大模型的推理分析能力与形式化验证工具的严谨性，搭建程序终止性分析框架，对程序的终止 / 非终止性及其类型进行分析与证明；成果已投稿《软件学报》。</li>
+        </ul>
+        <table>
+            <tr><td><b>医学数据集论文</b> - 上海交通大学瑞金医院</td></tr>
+        </table>
+        <ul>
+            <li>构建分类 / 分割任务医学数据集，基于 Agent 设计对医生友好、低成本、高效率的标注流程，独立负责全流程开发；以学生一作身份发表论文，已被 Scientific Data（Nature 子刊）接收。链接：<a href="https://nature.com/slam-datasets">nature.com/slam-datasets</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>荣誉与获奖</h2>
+        <table>
+            <tr><td>阿里云大模型工程师 ACA 认证</td><td></td><td>2025.05</td></tr>
+            <tr><td>百度飞桨启航计划开源项目（基础框架方向）结营</td><td></td><td>2024.09</td></tr>
+            <tr><td>校 2022 年度优秀学生创新创业团队 | 优秀毕业论文</td><td></td><td>2023.02</td></tr>
+            <tr><td>美国大学生数学建模竞赛</td><td>特等奖提名（Finalist）</td><td>2022.05</td></tr>
+            <tr><td>全国大学生数学建模竞赛</td><td>省级二等奖</td><td>2022.01</td></tr>
+            <tr><td>“挑战杯”大学生课外学术科技作品竞赛</td><td>省级二等奖</td><td>2021.06</td></tr>
+            <tr><td>NEUQ-ACM 校程序设计竞赛</td><td>一等奖</td><td>2021.01</td></tr>
+            <tr><td>亚太地区大学生数学建模竞赛</td><td>二等奖</td><td>2021.01</td></tr>
+            <tr><td>全国大学生算法设计与编程挑战赛（秋季赛 / 冬季赛）</td><td>铜奖 / 铜奖</td><td>2020.11 / 2020.12</td></tr>
+            <tr><td>NOIP 全国青少年信息学奥林匹克联赛 提高组复赛</td><td>一等奖</td><td>2017.12</td></tr>
+        </table>
+    </section>
+    <section>
+        <h2>其他</h2>
+        <ul>
+            <li>技术栈：C/C++、Python、SQL、Qt、Linux、Golang</li>
+            <li>博客：CSDN <a href="https://blog.csdn.net/Topsort">blog.csdn.net/Topsort</a></li>
+            <li>语言：英语（CET-6 474）</li>
+            <li>证书：软考中级 - 软件设计师</li>
         </ul>
     </section>
     <footer>
-        <p>@2025, <img src="../assets/img/github.png" sizes="16x16"/>
-            <a href="https://github.com/MikhayEeer">MikhayEeer's GitHub
-        </a></p>
+        <p>@2026, <img src="../assets/img/github.png" sizes="16x16"/>
+            <a href="https://github.com/MikhayEeer">MikhayEeer's GitHub</a></p>
     </footer>
 </body>
 </html>
